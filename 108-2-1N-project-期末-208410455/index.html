@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TKU 108-2 JavaScript Midterm Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="./index.html"> 邱浩哲 -- 208410455</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <div class="nav-item">
+            <a class="nav-link" href="#" onclick="showDemoList()">
+              JS Summary
+            </a>
+          </div>
+          <!-- <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              JS Demo
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#" onclick="showDemo('calculator')"
+                >Unconventional Calculator</a
+              >
+              <a class="dropdown-item" href="#" onclick="showDemo('monster')"
+                >Monster Killer</a
+              >
+              <a class="dropdown-item" href="#" onclick="showDemo('dom-movie')"
+                >DOM Movie</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="showDemo('music-player')"
+                >Music Player</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="showDemo('video-player')"
+                >Video Player</a
+              >
+            </div>
+          </div> -->
+          <div class="nav-item">
+            <a class="nav-link" href="#"> Settings </a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="demo-list" class="visible">
+        <!-- <h1 id="mid-heading">
+          108-2 JavaScript Midterm Project &nbsp &nbsp &nbsp &nbsp
+          <a class="btn btn-outline-warning"
+            ><i class="fas fa-plus-circle fa-2x"></i
+          ></a>
+        </h1> -->
+        <!-- <div class="btn btn-warning">
+          
+        </div> -->
+        <!-- <div class="row" id="mid-card-list">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="./img/w2-calculator.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Unconventional Calculator</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-around align-items-center">
+                  <a
+                    href="#"
+                    onclick="showDemo('calculator')"
+                    class="btn btn-outline-primary"
+                  >
+                    Go
+                  </a>
+                  <div class="btn btn-outline-info">
+                    <i class="far fa-edit"></i>
+                  </div>
+                  <div class="btn btn-outline-danger">
+                    <i class="far fa-trash-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="./img/w4-monster.JPG" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Monster Killer</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-around align-items-center">
+                  <a
+                    href="#"
+                    onclick="showDemo('monster')"
+                    class="btn btn-outline-primary"
+                  >
+                    Go
+                  </a>
+                  <div class="btn btn-outline-info">
+                    <i class="far fa-edit"></i>
+                  </div>
+                  <div class="btn btn-outline-danger">
+                    <i class="far fa-trash-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="./img/w6-dom-movie.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">DOM Movie</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-around align-items-center">
+                  <a
+                    href="#"
+                    onclick="showDemo('dom-movie')"
+                    class="btn btn-outline-primary"
+                  >
+                    Go
+                  </a>
+                  <div class="btn btn-outline-info">
+                    <i class="far fa-edit"></i>
+                  </div>
+                  <div class="btn btn-outline-danger">
+                    <i class="far fa-trash-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="./img/w3-music-player.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Music Player</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-around align-items-center">
+                  <a
+                    href="#"
+                    onclick="showDemo('music-player')"
+                    class="btn btn-outline-primary"
+                  >
+                    Go
+                  </a>
+                  <div class="btn btn-outline-info">
+                    <i class="far fa-edit"></i>
+                  </div>
+                  <div class="btn btn-outline-danger">
+                    <i class="far fa-trash-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="./img/w6-video-player.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Video Player</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-around align-items-center">
+                  <a
+                    href="#"
+                    onclick="showDemo('music-player')"
+                    class="btn btn-outline-primary"
+                  >
+                    Go
+                  </a>
+                  <div class="btn btn-outline-info">
+                    <i class="far fa-edit"></i>
+                  </div>
+                  <div class="btn btn-outline-danger">
+                    <i class="far fa-trash-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div id="demo" class="invisible"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
